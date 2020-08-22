@@ -1,0 +1,13 @@
+[Unit]
+Description=Bearcode service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=Always
+User=root
+ExecStart=bash /opt/bearcode/daemon.sh
+
+[Install]
+WantedBy=multi-user.target
