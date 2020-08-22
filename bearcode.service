@@ -5,7 +5,7 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=simple
-Restart=Always
+Restart=always
 User=root
 ExecStart=bash /opt/bearcode/daemon.sh
 
