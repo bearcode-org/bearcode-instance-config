@@ -11,8 +11,8 @@ ln -s "${DIR}/bearcode.service" /etc/systemd/system/bearcode.service
 
 # Start and enable service
 echo "Stating Bearcode Service..."
-systemctl stop bearcode
 systemctl daemon-reload
+systemctl stop bearcode
 systemctl start bearcode
 systemctl enable bearcode
 
