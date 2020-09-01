@@ -3,7 +3,9 @@
 set -e
 
 # Install code-server
-curl -fsSL https://code-server.dev/install.sh | sh -s -- --version=3.4.1
+# TODO: Move these scripts to another "startup" deamon
+# curl -fsSL https://code-server.dev/install.sh | sh -s -- --version=3.5.0
 
 # Start code-server
-code-server --bind-addr=0.0.0.0 --port=80 --auth none
+# TODO: Use Envoy to proxy https / http to this port
+code-server --bind-addr=0.0.0.0 --port=3333 --auth none
